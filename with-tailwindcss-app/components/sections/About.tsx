@@ -13,6 +13,7 @@ function About() {
             width={250}
             height={250}
             objectFit="contain"
+            // style=""
           />
         </div>
 

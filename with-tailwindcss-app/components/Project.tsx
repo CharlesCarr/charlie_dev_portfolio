@@ -14,7 +14,7 @@ const Project: any = ({
 }: ProjectData) => {
   return (
     <div className="text-sm">
-      <div className="w-100 flex justify-center items-center">
+      <div className="w-100 flex justify-center items-center border-2">
         <Image
           alt="headshot"
           src={Headshot}
@@ -27,15 +27,15 @@ const Project: any = ({
         <div className="w-100 flex justify-center items-center">
           <h1 className="text-white grow">{title}</h1>
           <div className="flex justify-center items-center">
-            <LinkIcon className="text-4xl" />
-            <FaGithub className="text-4xl ml-2" />
+            <LinkIcon className="text-4xl cursor-pointer" />
+            <FaGithub className="text-4xl ml-2 cursor-pointer" />
           </div>
         </div>
 
-        <p className="text-xs">{description}</p>
-        <div className="flex">
+        <p className="text-xs mb-3">{description}</p>
+        <div className="flex justify-start items-center">
           {tech.map((t: string) => {
-            return <p className="text-xs">{t}</p>;
+            return <p className="text-xs border mr-3 p-1">{t}</p>;
           })}
         </div>
       </div>
