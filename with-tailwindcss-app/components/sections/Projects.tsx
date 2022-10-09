@@ -77,7 +77,7 @@ function Projects() {
         )}
       </div>
 
-      <div className="flex justify-center items-center my-10">
+      <div className="flex justify-center items-center my-20">
         <button className="w-32 border p-4" onClick={toggleMoreProjects}>
           {showAllPros ? "See Less" : "See More"}
         </button>

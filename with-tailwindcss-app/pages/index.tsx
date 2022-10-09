@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Main from "../components/sections/Main";
 import About from "../components/sections/About";
 import Projects from "../components/sections/Projects";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       </div>
       <About />
       <Projects />
+      <Footer />
     </div>
   );
 };
