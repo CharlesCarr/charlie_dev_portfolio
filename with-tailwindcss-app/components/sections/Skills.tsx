@@ -22,10 +22,13 @@ const Skills = () => {
     "Mongoose",
     "D3",
     "RXJS",
+    "TailwindCSS",
+    "Mocha",
+    "Jest",
   ];
 
   return (
-    <section className="flex flex-col justify-start items-center px-42 py-24 w-full h-screen">
+    <section className="flex flex-col justify-start items-center px-42 py-24 w-full min-h-screen">
       <h1 className="mb-10 text-3xl">SKILLS.</h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-14 gap-y-8 text-center">
         {skills.map((skill: string) => {
@@ -37,8 +40,8 @@ const Skills = () => {
                 className="relative inline-block px-4 py-2 font-medium group"
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black group-hover:border-white"></span>
-                <span className="relative text-black group-hover:text-white">
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black group-hover:border-white transition duration-500 ease-out"></span>
+                <span className="relative text-black group-hover:text-white transition duration-500 ease-out">
                   {skill}
                 </span>
               </a>
