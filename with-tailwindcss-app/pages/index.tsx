@@ -10,10 +10,16 @@ import Skills from "../components/sections/Skills";
 const Home: NextPage = () => {
   return (
     // <div className="relative flex min-h-screen flex-col items-center justify-center py-2 bg-zinc-900 text-slate-50 opacity-95">
-    <div className="bg-neutral-900 h-full flex flex-col items-center text-white">
+    <div className="bg-neutral-900 h-full flex flex-col items-center text-white font-poppins">
       <Head>
         <title>Charlie Carr</title>
         <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Header />
       <div className="relative w-full min-h-screen">

@@ -7,12 +7,13 @@ import VercelIcon from "components/svgs/vercel.svg";
 import TailwindIcon from "components/svgs/tailwind.svg";
 import ReduxIcon from "components/svgs/redux.svg";
 import NodeIcon from "components/svgs/node.svg";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Main() {
   return (
     <main className="flex w-full flex-1 items-center justify-center px-20 mt-28 min-h-full">
-      <div className="relative mt-32">
+      <div className="relative">
         <div className="bg-white w-16 h-16 flex justify-center items-center rounded-full absolute -top-24 right-60">
           <ReactIcon className="text-5xl" />
         </div>
@@ -42,11 +43,25 @@ function Main() {
             loop: true,
           }}
         /> */}
-        <h1 className="text-5xl text-center tracking-widest mb-2">CHARLIE CARR.</h1>
+        <h1 className="text-5xl text-center tracking-widest mb-2">
+          CHARLIE CARR.
+        </h1>
         <h1 className="text-2xl text-center tracking-wider">FRONT END DEV.</h1>
+
+        <div className="h-24 w-90 rounded-md bg-neutral-400 mt-24 flex justify-center items-center">
+          <p className="underline">View My Projects Below</p>
+          <div className="flex justify-center items-center mt-10">
+            <div className="flex justify-center items-center h-10 w-10 bg-black mr-2 rounded-full">
+              <FaGithub className="w-6 h-6" />
+            </div>
+            <div className="flex justify-center items-center h-10 w-10 bg-black rounded-full">
+              <FaLinkedin className="w-6 h-6" />
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="relative mt-32">
+      <div className="relative">
         <div className="bg-white w-16 h-16 flex justify-center items-center rounded-full absolute -top-24 left-60">
           <NodeIcon className="text-5xl" />
         </div>

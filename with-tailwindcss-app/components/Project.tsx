@@ -34,7 +34,7 @@ const Project: any = ({
         <p className="text-xs mb-3">{description}</p>
         <div className="flex justify-start items-center">
           {tech.map((t: string) => {
-            return <p className="text-xs border mr-3 py-1 px-3">{t}</p>;
+            return <p className="text-xs border mr-3 py-1 px-3 rounded-md">{t}</p>;
           })}
         </div>
       </div>
