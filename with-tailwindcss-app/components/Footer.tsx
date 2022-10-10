@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-zinc-900 flex px-60 py-24 text-sm">
+    <div className="w-full bg-black flex px-60 py-24 text-sm">
       <div className="flex flex-col items-start w-1/2">
         <p className="text-xl mb-2">This Website</p>
         <p className="mb-2">Designed & Developed by Charlie Carr</p>
