@@ -8,7 +8,7 @@ import TailwindIcon from "components/svgs/tailwind.svg";
 import ReduxIcon from "components/svgs/redux.svg";
 import NodeIcon from "components/svgs/node.svg";
 // import Typewriter from "typewriter-effect";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import MainSub from "../MainSub";
 
 function Main() {
   return (
@@ -29,36 +29,14 @@ function Main() {
       </div>
 
       <div className="flex flex-col mx-6 text-white">
-        {/* <Typewriter
-          options={{
-            strings: ["CHARLIE CARR."],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-        <Typewriter
-          options={{
-            strings: ["SOFTWARE DEVELOPER."],
-            autoStart: true,
-            loop: true,
-          }}
-        /> */}
         <h1 className="text-5xl text-center tracking-widest mb-2">
-          CHARLIE CARR.
+          <a className="text-6xl">C</a>HARLIE <a className="text-6xl">C</a>ARR.
         </h1>
-        <h1 className="text-2xl text-center tracking-wider">FRONT END DEV.</h1>
-
-        <div className="h-24 w-90 rounded-md bg-neutral-400 mt-24 flex justify-center items-center">
-          <p className="underline">View My Projects Below</p>
-          <div className="flex justify-center items-center mt-10">
-            <div className="flex justify-center items-center h-10 w-10 bg-black mr-2 rounded-full">
-              <FaGithub className="w-6 h-6" />
-            </div>
-            <div className="flex justify-center items-center h-10 w-10 bg-black rounded-full">
-              <FaLinkedin className="w-6 h-6" />
-            </div>
-          </div>
-        </div>
+        <h1 className="text-2xl text-center tracking-widest">
+          <a className="text-3xl">F</a>RONT <a className="text-3xl">E</a>ND{" "}
+          <a className="text-3xl">D</a>EV.
+        </h1>
+        <MainSub />
       </div>
 
       <div className="relative">
