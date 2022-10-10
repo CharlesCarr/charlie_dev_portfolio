@@ -7,11 +7,12 @@ import VercelIcon from "components/svgs/vercel.svg";
 import TailwindIcon from "components/svgs/tailwind.svg";
 import ReduxIcon from "components/svgs/redux.svg";
 import NodeIcon from "components/svgs/node.svg";
+import Typewriter from "typewriter-effect";
 
 function Main() {
   return (
-    <main className="flex w-full flex-1 items-center justify-center px-20 mt-52 min-h-full">
-      <div className="relative">
+    <main className="flex w-full flex-1 items-center justify-center px-20 mt-28 min-h-full">
+      <div className="relative mt-32">
         <div className="bg-white w-16 h-16 flex justify-center items-center rounded-full absolute -top-24 right-60">
           <ReactIcon className="text-5xl" />
         </div>
@@ -27,11 +28,25 @@ function Main() {
       </div>
 
       <div className="flex flex-col mx-6 text-white">
-        <h1 className="text-4xl">CHARLIE CARR.</h1>
-        <h1 className="text-4xl">SOFTWARE DEVELOPER.</h1>
+        {/* <Typewriter
+          options={{
+            strings: ["CHARLIE CARR."],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+        <Typewriter
+          options={{
+            strings: ["SOFTWARE DEVELOPER."],
+            autoStart: true,
+            loop: true,
+          }}
+        /> */}
+        <h1 className="text-5xl text-center tracking-widest mb-2">CHARLIE CARR.</h1>
+        <h1 className="text-2xl text-center tracking-wider">FRONT END DEV.</h1>
       </div>
 
-      <div className="relative">
+      <div className="relative mt-32">
         <div className="bg-white w-16 h-16 flex justify-center items-center rounded-full absolute -top-24 left-60">
           <NodeIcon className="text-5xl" />
         </div>

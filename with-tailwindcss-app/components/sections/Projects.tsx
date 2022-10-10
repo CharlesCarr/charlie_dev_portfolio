@@ -43,23 +43,25 @@ const allProjects = [
 
 function Projects() {
   const [showAllPros, setShowAllPros] = useState(false);
-  const [projects, setProjects] = useState<ProjectData[]>(allProjects.slice(0,3));
+  const [projects, setProjects] = useState<ProjectData[]>(
+    allProjects.slice(0, 2)
+  );
 
   const toggleMoreProjects = () => {
     setShowAllPros(!showAllPros);
 
-    if (projects.length > 3) {
-      setProjects(allProjects.slice(0,3));
+    if (projects.length > 2) {
+      setProjects(allProjects.slice(0, 2));
     } else {
       setProjects(allProjects);
     }
   };
 
   return (
-    <section className="flex flex-col justify-start item-start mt-32 px-20">
-      <p>MY WORK.</p>
+    <section className="flex flex-col justify-center items-center px-44 h-full">
+      <p className="text-3xl">MY WORK.</p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0">
         {projects.map(
           ({ title, image, description, github, demo, tech }: ProjectData) => {
             return (
@@ -77,7 +79,7 @@ function Projects() {
         )}
       </div>
 
-      <div className="flex justify-center items-center my-20">
+      <div className="flex justify-center items-center mb-28">
         <button className="w-32 border p-4" onClick={toggleMoreProjects}>
           {showAllPros ? "See Less" : "See More"}
         </button>

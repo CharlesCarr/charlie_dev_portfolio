@@ -13,18 +13,17 @@ const Project: any = ({
   tech,
 }: ProjectData) => {
   return (
-    <div className="text-sm">
-      <div className="w-100 flex justify-center items-center border-2">
+    <div className="text-sm h-screen flex flex-col justify-center items-center">
+      <div className="w-full relative border-8 h-1/2">
         <Image
           alt="headshot"
           src={Headshot}
-          width={150}
-          height={150}
-          objectFit="contain"
+          layout="fill"
+          objectFit="cover"
         />
       </div>
-      <div className="w-100">
-        <div className="w-100 flex justify-center items-center">
+      <div className="w-full h-1/4">
+        <div className="w-full flex justify-center items-center">
           <h1 className="text-white grow">{title}</h1>
           <div className="flex justify-center items-center">
             <LinkIcon className="text-4xl cursor-pointer" />
@@ -35,7 +34,7 @@ const Project: any = ({
         <p className="text-xs mb-3">{description}</p>
         <div className="flex justify-start items-center">
           {tech.map((t: string) => {
-            return <p className="text-xs border mr-3 p-1">{t}</p>;
+            return <p className="text-xs border mr-3 py-1 px-3">{t}</p>;
           })}
         </div>
       </div>
