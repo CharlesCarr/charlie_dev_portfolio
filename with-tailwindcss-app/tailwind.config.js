@@ -13,6 +13,7 @@ module.exports = {
       },
       animation: {
         blob: "blob 7s infinite",
+        hBlob: "hBlob 7s infinite",
       },
       keyframes: {
         blob: {
@@ -29,6 +30,20 @@ module.exports = {
             transform: "tranlate(0px, 0px) scale(1)",
           },
         },
+        hBlob: {
+           "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -10px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(80px, 0px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(100px, 10px) scale(1)",
+          },
+        }
       },
     },
   },

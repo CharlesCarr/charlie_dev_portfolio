@@ -22,14 +22,14 @@ const Home: NextPage = () => {
         ></link>
       </Head>
       <Header />
-      <div className="relative w-full min-h-screen">
+      {/* <div className="relative w-full min-h-screen"> */}
         {/* Shapes for Background Gradient */}
-        <div className="absolute top-52 left-24 w-52 h-52 bg-cyan-300 rounded-full mix-blend-lighten filter blur-2xl opacity-20 animate-blob"></div>
+        {/* <div className="absolute top-52 left-24 w-52 h-52 bg-cyan-300 rounded-full mix-blend-lighten filter blur-2xl opacity-20 animate-blob"></div>
         <div className="absolute top-24 left-24 w-52 h-52 bg-teal-100 rounded-full mix-blend-lighten filter blur-2xl opacity-20 animate-blob"></div>
         <div className="absolute top-44 right-44 w-52 h-52 bg-teal-300 rounded-full mix-blend-lighten filter blur-2xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-20 left-96 w-32 h-32 bg-orange-400 rounded-full mix-blend-lighten filter blur-2xl opacity-20 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-20 left-96 w-32 h-32 bg-orange-400 rounded-full mix-blend-lighten filter blur-2xl opacity-20 animate-blob animation-delay-4000"></div> */}
         <Main />
-      </div>
+      {/* </div> */}
       <About />
       <Skills />
       <Projects />
