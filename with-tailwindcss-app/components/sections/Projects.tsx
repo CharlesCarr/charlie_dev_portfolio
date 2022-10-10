@@ -58,7 +58,7 @@ function Projects() {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center px-44 h-full">
+    <section className="flex flex-col justify-center items-center px-32 h-full">
       <p className="text-3xl">MY WORK.</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0">
@@ -80,7 +80,7 @@ function Projects() {
       </div>
 
       <div className="flex justify-center items-center mb-28">
-        <button className="w-32 border p-4" onClick={toggleMoreProjects}>
+        <button className="w-32 border p-4 rounded-md bg-neutral-800 shadow-2xl font-semibold tracking-wider" onClick={toggleMoreProjects}>
           {showAllPros ? "See Less" : "See More"}
         </button>
       </div>
