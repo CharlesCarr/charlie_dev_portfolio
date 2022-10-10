@@ -58,7 +58,7 @@ function Projects() {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center px-32 h-full">
+    <section className="flex flex-col justify-center items-center px-4 sm:px-32 h-full">
       <p className="text-3xl">MY WORK.</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0">
@@ -80,9 +80,15 @@ function Projects() {
       </div>
 
       <div className="flex justify-center items-center mb-28">
-        <button className="w-32 border p-4 rounded-md bg-neutral-800 shadow-2xl font-semibold tracking-wider" onClick={toggleMoreProjects}>
-          {showAllPros ? "See Less" : "See More"}
-        </button>
+        <a
+          onClick={toggleMoreProjects}
+          className="relative border-white border-2 mr-3 rounded px-8 py-4 overflow-hidden group bg-neutral-800 hover:bg-gradient-to-r hover:from-neutral-700 hover:to-neutral-500 text-white hover:ring-2 hover:ring-offset-2 hover:ring-neutral-500 transition-all ease-out duration-300 cursor-pointer"
+        >
+          <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+          <span className="relative font-semibold tracking-wider text-lg">
+            {showAllPros ? "See Less" : "See More"}
+          </span>
+        </a>
       </div>
     </section>
   );
