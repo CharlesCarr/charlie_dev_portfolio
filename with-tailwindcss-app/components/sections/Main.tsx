@@ -12,17 +12,17 @@ import MainSub from "../MainSub";
 
 function Main() {
   return (
-    <main className="flex w-full items-center justify-center px-5 sm:px-20 mt-28 mb-28 min-h-full">
+    <main className="flex w-full items-center justify-center px-5 sm:px-20 mt-28 mb-28 min-h-full" id="home">
       <div className="hidden lg:block relative">
         <div className="bg-white w-16 h-16 flex justify-center items-center rounded-full absolute -top-24 right-60">
           <div className="relative">
-            <div className="absolute -bottom-10 -right-8 w-28 h-28 bg-cyan-300 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
+            <div className="absolute -bottom-10 -right-8 w-20 h-20 bg-cyan-300 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
             <ReactIcon className="text-5xl" />
           </div>
         </div>
         <div className="bg-white w-10 h-10 flex justify-center items-center rounded-full absolute -top-32 right-20">
           <div className="relative">
-            <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-orange-400 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
+            <div className="absolute -bottom-8 -right-8 w-20 h-20 bg-orange-400 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
             <HTMLIcon className="text-3xl" />
           </div>
         </div>
@@ -34,7 +34,7 @@ function Main() {
         </div>
         <div className="bg-white w-14 h-14 flex justify-center items-center rounded-full absolute -bottom-24 right-44">
           <div className="relative">
-            <div className="absolute -bottom-10 -right-8 w-24 h-24 bg-blue-400 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
+            <div className="absolute -bottom-10 -right-8 w-20 h-20 bg-blue-400 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
             <TypeScriptIcon className="text-4xl" />
           </div>
         </div>
@@ -55,13 +55,13 @@ function Main() {
       <div className="relative hidden lg:block">
         <div className="bg-white w-16 h-16 flex justify-center items-center rounded-full absolute -top-24 left-60">
           <div className="relative">
-            <div className="absolute -bottom-5 -right-12 w-28 h-28 bg-green-300 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
+            <div className="absolute -bottom-5 -right-12 w-20 h-20 bg-green-300 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
             <NodeIcon className="text-5xl" />
           </div>
         </div>
         <div className="bg-white w-12 h-12 flex justify-center items-center rounded-full absolute -top-32 left-20">
           <div className="relative">
-            <div className="absolute -bottom-5 -right-12 w-24 h-24 bg-purple-300 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
+            <div className="absolute -bottom-5 -right-12 w-20 h-20 bg-purple-300 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
             <ReduxIcon className="text-3xl" />
           </div>
         </div>
@@ -73,7 +73,7 @@ function Main() {
         </div>
         <div className="bg-white w-12 h-12 flex justify-center items-center rounded-full absolute -bottom-24 left-44">
           <div className="relative">
-            <div className="absolute -bottom-5 -right-12 w-24 h-24 bg-yellow-300 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
+            <div className="absolute -bottom-5 -right-12 w-20 h-20 bg-yellow-300 rounded-full mix-blend-lighten filter blur-xl opacity-20"></div>
             <JavaScriptIcon className="text-2xl" />
           </div>
         </div>

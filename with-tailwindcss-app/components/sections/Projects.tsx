@@ -58,7 +58,7 @@ function Projects() {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center px-4 sm:px-32 h-full">
+    <section className="flex flex-col justify-center items-center px-4 sm:px-32 h-full" id="projects">
       <p className="text-3xl">MY WORK.</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0">

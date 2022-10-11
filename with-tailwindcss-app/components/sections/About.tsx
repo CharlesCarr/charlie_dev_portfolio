@@ -4,7 +4,7 @@ import Headshot from "../../images/headshot.jpeg";
 
 function About() {
   return (
-    <section className="sm:grid sm:grid-cols-2 mt-32 px-0 lg:px-44 h-96 sm:h-screen w-full mb-96 sm:mb-0">
+    <section className="sm:grid sm:grid-cols-2 mt-32 px-0 lg:px-44 h-96 sm:h-screen w-full mb-96 sm:mb-0" id="about">
       <div className="w-full h-3/4 sm:h-1/3 md:h-1/2 relative ml-0 sm:ml-5 md:ml-0 mb-40 sm:mb-0">
         <Image
           alt="headshot"

@@ -22,17 +22,17 @@ function Header() {
       </div>
 
       <div className="sm:flex items-center justify-between text-xs w-44 justify-self-center hidden">
-        <p className="cursor-pointer relative before:absolute before:-bottom-1 before:h-px before:w-full before:origin-left before:scale-x-0 before:bg-slate-50 before:transition hover:before:scale-100">
+        <a className="cursor-pointer relative before:absolute before:-bottom-1 before:h-px before:w-full before:origin-left before:scale-x-0 before:bg-slate-50 before:transition hover:before:scale-100" href="#home">
           Home
-        </p>
+        </a>
         <div className="h-1 w-1 rounded-full bg-white"></div>
-        <p className="cursor-pointer relative before:absolute before:-bottom-1 before:h-px before:w-full before:origin-left before:scale-x-0 before:bg-slate-50 before:transition hover:before:scale-100">
+        <a className="cursor-pointer relative before:absolute before:-bottom-1 before:h-px before:w-full before:origin-left before:scale-x-0 before:bg-slate-50 before:transition hover:before:scale-100" href="#about">
           About
-        </p>
+        </a>
         <div className="h-1 w-1 rounded-full bg-white"></div>
-        <p className="cursor-pointer relative before:absolute before:-bottom-1 before:h-px before:w-full before:origin-left before:scale-x-0 before:bg-slate-50 before:transition hover:before:scale-100">
+        <a className="cursor-pointer relative before:absolute before:-bottom-1 before:h-px before:w-full before:origin-left before:scale-x-0 before:bg-slate-50 before:transition hover:before:scale-100" href="#projects">
           Projects
-        </p>
+        </a>
       </div>
 
       <div className="flex items-center space-x-4 justify-end">
