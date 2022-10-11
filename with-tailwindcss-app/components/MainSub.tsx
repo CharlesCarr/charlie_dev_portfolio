@@ -15,7 +15,7 @@ const MainSub = () => {
         </p>
       </div>
 
-      <div className="flex justify-center items-center px-6 h-full">
+      <div className="flex justify-center items-center px-3 h-full">
         <div
           className="flex justify-center items-center h-9 w-9 bg-neutral-800 mr-3 rounded-full cursor-pointer"
           onClick={() => clickHandler()}
