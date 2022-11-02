@@ -1,6 +1,8 @@
 // import React from "react";
 // import Image from "next/image";
 // import Headshot from "../../images/headshot.jpeg";
+import { FaMapPin, FaGithub, FaLinkedin } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 
 function LeftSection() {
   return (
@@ -17,16 +19,28 @@ function LeftSection() {
         </div> */}
       </div>
 
-      <div className="w-full h-1/2 flex flex-col justify-center items-center border mt-10">
-        {/* <ul className="flex justify-center items-center m-0 p-0">
-          <li className="border rounded-full w-6 h-6 flex justify-center items-center text-xs">
-            li
+      <div className="w-full h-1/2 flex flex-col justify-start items-center border border-black mt-10 p-6 bg-slate-200 shadow-inner">
+        <p className="text-3xl mb-2">CHARLIE CARR</p>
+        <ul className="w-full flex justify-center items-center m-0 p-0">
+          <li className="mr-3">
+            <FaLinkedin className="w-6 h-6 cursor-pointer" />
           </li>
-          <li className="border rounded-full w-6 h-6 flex justify-center items-center text-xs">
-            gh
+          <li className="mr-3">
+            <FaGithub className="w-6 h-6 cursor-pointer" />
+          </li>
+          <li className="">
+            <GrMail className="w-6 h-6 cursor-pointer" />
           </li>
         </ul>
-        <p className="text-xs">Shorter Bio</p> */}
+        <div className="w-full flex justify-between items-center mt-3">
+          <p className="font-light">Software Developer</p>
+          <div className="flex items-center justify-center">
+            <FaMapPin className="text-red-600 w-4 h-4" />
+            <p className="ml-px">NYC</p>
+          </div>
+        </div>
+
+        <div className="w-full h-4 border-b-2 border-black"></div>
       </div>
     </section>
   );
