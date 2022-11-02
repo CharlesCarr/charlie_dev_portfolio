@@ -1,11 +1,41 @@
-import React from "react";
-import Image from "next/image";
-import Headshot from "../../images/headshot.jpeg";
+// import React from "react";
+// import Image from "next/image";
+// import Headshot from "../../images/headshot.jpeg";
 
-function About() {
+function LeftSection() {
   return (
-    <section className="sm:grid sm:grid-cols-2 mt-32 px-0 lg:px-44 h-96 sm:h-screen w-full mb-96 sm:mb-0" id="about">
-      <div className="w-full h-3/4 sm:h-1/3 md:h-1/2 relative ml-0 sm:ml-5 md:ml-0 mb-40 sm:mb-0">
+    <section className="w-1/4 h-full flex flex-col border border-black px-12 py-6">
+      <div className="w-full h-1/2 flex flex-col justify-center items-center border">
+        {/* <div className="flex justify-center items-center">
+          <p className="text-xs">headshot</p>
+        </div>
+        <div className="text-white bg-black h-1/2 w-3/4 flex justify-center items-center">
+          img
+        </div>
+        <div className="h-1/4 flex justify-center items-center">
+          <p className="text-xs">headshot</p>
+        </div> */}
+      </div>
+
+      <div className="w-full h-1/2 flex flex-col justify-center items-center border mt-10">
+        {/* <ul className="flex justify-center items-center m-0 p-0">
+          <li className="border rounded-full w-6 h-6 flex justify-center items-center text-xs">
+            li
+          </li>
+          <li className="border rounded-full w-6 h-6 flex justify-center items-center text-xs">
+            gh
+          </li>
+        </ul>
+        <p className="text-xs">Shorter Bio</p> */}
+      </div>
+    </section>
+  );
+}
+
+export default LeftSection;
+
+{
+  /* <div className="w-full h-3/4 sm:h-1/3 md:h-1/2 relative ml-0 sm:ml-5 md:ml-0 mb-40 sm:mb-0">
         <Image
           alt="headshot"
           src={Headshot}
@@ -41,9 +71,5 @@ function About() {
           , a labor market data platform, where I actively contributed to the
           React/TypeScript code base.
         </p>
-      </div>
-    </section>
-  );
+      </div> */
 }
-
-export default About;
