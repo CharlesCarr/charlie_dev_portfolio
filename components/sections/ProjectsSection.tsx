@@ -46,16 +46,26 @@ function Projects() {
   const [projectSelected, setProjectSelected] = useState<number>(0);
   console.log(projectSelected);
 
-  const testScroll = (event: any) => {
-    console.log(event);
-  }
-
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full relative">
+      <ul className="absolute flex justify-center items-center -top-10 left-0">
+        <li className="mr-4 border border-black w-3 h-3 rounded-full" onClick={() => setProjectSelected(0)}>
+        </li>
+        <li className="mr-4 border border-black w-3 h-3 rounded-full" onClick={() => setProjectSelected(1)}>
+        </li>
+        <li className="mr-4 border border-black w-3 h-3 rounded-full" onClick={() => setProjectSelected(2)}>
+        </li>
+        <li className="mr-4 border border-black w-3 h-3 rounded-full" onClick={() => setProjectSelected(3)}>
+        </li>
+      </ul>
       {/* Individual Project One */}
       {projectSelected === 0 && <Project />}
-      {projectSelected === 1 && <div className="h-full w-full border border-black">Project Two</div>}
-      {projectSelected === 2 && <div className="h-full w-full border border-black">Project Three</div>}
+      {projectSelected === 1 && (
+        <div className="h-full w-full border border-black">Project Two</div>
+      )}
+      {projectSelected === 2 && (
+        <div className="h-full w-full border border-black">Project Three</div>
+      )}
     </div>
   );
 }
