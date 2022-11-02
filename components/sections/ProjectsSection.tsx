@@ -1,4 +1,4 @@
-// import Project from "../Project";
+import Project from "../Project";
 // import { ProjectData } from "../../types/ProjectData";
 import { useState } from "react";
 
@@ -53,7 +53,7 @@ function Projects() {
   return (
     <div className="h-full w-full">
       {/* Individual Project One */}
-      {projectSelected === 0 && <div className="h-full w-full border border-black">Project One</div>}
+      {projectSelected === 0 && <Project />}
       {projectSelected === 1 && <div className="h-full w-full border border-black">Project Two</div>}
       {projectSelected === 2 && <div className="h-full w-full border border-black">Project Three</div>}
     </div>

@@ -1,19 +1,54 @@
-import Image from "next/image";
-import { ProjectData } from "../types/ProjectData";
-import Headshot from "../images/headshot.jpeg";
+// import Image from "next/image";
+// import { ProjectData } from "../types/ProjectData";
+// import Headshot from "../images/headshot.jpeg";
 import { FaGithub } from "react-icons/fa";
 import { LinkIcon } from "@heroicons/react/24/solid";
 
-const Project: any = ({
-  title,
-  image,
-  description,
-  github,
-  demo,
-  tech,
-}: ProjectData) => {
+const Project = () => {
   return (
-    <div className="text-sm h-screen flex flex-col justify-center items-center">
+    <div className="h-full w-full border border-black flex justify-center items-center p-6">
+      {/* left side project */}
+      <div className="w-1/3 h-full border flex flex-col justify-start items-center py-6 px-4">
+        <h1 className="font-bold mb-2 text-2xl">'MY WORKOUT APP'</h1>
+        <div className="w-full h-1 border-t border-black mb-2"></div>
+        <p className="text-sm text-center leading-6">
+          This is a mobile friendly, custom workout tracker web app built with
+          React. After creating a profile, users are able to create, save, and
+          edit workouts to store in the user’s library of workouts. Users can
+          then select a workout for the day to have on hand while at the gym.
+        </p>
+        <div className="w-full h-4 border-t border-black mt-2"></div>
+        <ul className="m-0 p-0 w-full flex justify-center items-center">
+          <li>
+            <FaGithub className="w-8 h-8 mr-3" />
+          </li>
+          <li>
+            <LinkIcon className="w-8 h-8 ml-3" />
+          </li>
+        </ul>
+      </div>
+
+      {/* right side project */}
+      <div className="w-2/3 h-full border flex flex-col items-center justify-center p-4">
+        {/* change to video soon */}
+        <div className="w-full h-3/4 border border-black flex justify-center items-center">
+          img
+        </div>
+        <ul className="w-full h-1/4 border border-black flex justify-around items-center">
+          <li>Test</li>
+          <li>Test</li>
+          <li>Test</li>
+          <li>Test</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Project;
+
+{
+  /* <div className="text-sm h-screen flex flex-col justify-center items-center">
       <div className="w-full relative border-8 h-1/2">
         <Image
           alt="headshot"
@@ -38,8 +73,5 @@ const Project: any = ({
           })}
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Project;
+    </div> */
+}
