@@ -1,53 +1,86 @@
+import SkillSub from "../SkillSub";
+
 const Skills = () => {
   // const skills = [
-  //   "TypeScript",
-  //   "React",
-  //   "Next.js",
-  //   "JavaScript",
-  //   "HTML",
-  //   "CSS",
-  //   "Firebase",
-  //   "Git",
-  //   "Github",
-  //   "Figma",
-  //   "Material UI",
-  //   "Chakra UI",
-  //   "Bootstrap",
-  //   "Redux",
+
+
   //   "Node",
   //   "MongoDB",
-  //   "Express",
-  //   "Mongoose",
-  //   "D3",
-  //   "RXJS",
-  //   "TailwindCSS",
-  //   "Mocha",
-  //   "Jest",
+
+
   // ];
+
+  // Categories of skills - Languages, Hosting/Version Control, Responsive Design, Libraries/Frameworks
+
+  const allSkills = [
+    {
+      skillCat: "Languages",
+      skillArr: [
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Python (Learning)",
+      ],
+    },
+    {
+      skillCat: "Frameworks / Libraries",
+      skillArr: [
+        "React",
+        "Redux",
+        "Next.js",
+        "Node",
+        "Express",
+        "Mongoose",
+        "D3",
+        "RxJS",
+        "Mocha",
+        "Jest"
+      ],
+    },
+    {
+      skillCat: "UI / UX Design",
+      skillArr: [
+        "Tailwind CSS",
+        "Chakra UI",
+        "Material UI",
+        "Bootstrap",
+        "Figma",
+      ],
+    },
+    {
+      skillCat: "Version Control / Hosting",
+      skillArr: [
+        "Git",
+        "GitHub",
+        "Firebase",
+        "Vercel",
+      ],
+    },
+  ];
 
   return (
     <>
-      <div className="h-full w-1/3 border mr-2">
-        <div className="flex flex-col justify-center items-center py-6 px-3">
-          <p className="text-2xl font-bold border-b-2 border-black w-full text-center mb-4 pb-3">Skill Top</p>
-          <div className="flex w-full h-full justify-around items-center">
-            <ul className="list-none flex flex-col items-center justify-around h-full">
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-            </ul>
-            <ul className="list-none flex flex-col items-center justify-around h-full">
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-            </ul>
-          </div>
+      <div className="h-full w-1/4 border mr-2">
+        <SkillSub category={allSkills[0].skillCat} skills={allSkills[0].skillArr} />
+      </div>
+      <div className="h-full w-2/4 border mr-2">
+        <SkillSub category={allSkills[1].skillCat} skills={allSkills[1].skillArr} />
+      </div>
+      <div className="h-full w-1/4 border flex flex-col justify-center items-center">
+        <div className="h-1/2 w-full">
+          <SkillSub
+            category={allSkills[2].skillCat}
+            skills={allSkills[2].skillArr}
+          />
+        </div>
+        <div className="h-1/2 w-full">
+          <SkillSub
+            category={allSkills[3].skillCat}
+            skills={allSkills[3].skillArr}
+          />
         </div>
       </div>
-      <div className="h-full w-1/3 border mr-2"></div>
-      <div className="h-full w-1/3 border"></div>
     </>
   );
 };

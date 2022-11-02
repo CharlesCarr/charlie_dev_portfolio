@@ -18,7 +18,7 @@ const AboutSection = () => {
       </p>
       <p className="w-full xl:w-3/4 leading-7 sm:pr-8 xl:pr-0">
         I recently finished my first engineering role as a front end development
-        intern for{" "}
+        intern at{" "}
         <a
           href="https://www.reveliolabs.com/"
           target="_blank"
@@ -27,7 +27,7 @@ const AboutSection = () => {
           Revelio Labs
         </a>
         , a labor market data platform, where I actively contributed to the
-        React/TypeScript code base.
+        front end enterprise dashboard in a React/TypeScript code base.
       </p>
     </div>
   );
