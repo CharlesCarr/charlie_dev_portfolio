@@ -49,13 +49,13 @@ function Projects() {
   return (
     <div className="h-full w-full relative">
       <ul className="absolute flex justify-center items-center -top-10 left-0">
-        <li className={`${projectSelected === 0 ? "bg-black" : null} mr-4 border border-black w-2 h-2 rounded-full`} onClick={() => setProjectSelected(0)}>
+        <li className={`${projectSelected === 0 ? "bg-black" : null} mr-4 border border-black w-3 h-3 rounded-full cursor-pointer`} onClick={() => setProjectSelected(0)}>
         </li>
-        <li className={`${projectSelected === 1 ? "bg-black" : null} mr-4 border border-black w-2 h-2 rounded-full`} onClick={() => setProjectSelected(1)}>
+        <li className={`${projectSelected === 1 ? "bg-black" : null} mr-4 border border-black w-3 h-3 rounded-full cursor-pointer`} onClick={() => setProjectSelected(1)}>
         </li>
-        <li className={`${projectSelected === 2 ? "bg-black" : null} mr-4 border border-black w-2 h-2 rounded-full`} onClick={() => setProjectSelected(2)}>
+        <li className={`${projectSelected === 2 ? "bg-black" : null} mr-4 border border-black w-3 h-3 rounded-full cursor-pointer`} onClick={() => setProjectSelected(2)}>
         </li>
-        <li className={`${projectSelected === 3 ? "bg-black" : null} mr-4 border border-black w-2 h-2 rounded-full`} onClick={() => setProjectSelected(3)}>
+        <li className={`${projectSelected === 3 ? "bg-black" : null} mr-4 border border-black w-3 h-3 rounded-full cursor-pointer`} onClick={() => setProjectSelected(3)}>
         </li>
       </ul>
       {/* Individual Project One */}

@@ -11,10 +11,10 @@ function Header() {
   // const [showHamMenu, setShowHamMenu] = useState<boolean>(false);
 
   return (
-    <header className="flex h-16 w-full justify-between items-center px-10 border border-black">
+    <header className="flex h-16 w-full justify-between items-center px-12 border border-black">
       {/* right header */}
-      <div>
-        <p className="font-bold text-lg">charlie-carr.com</p>
+      <div className="flex justify-center items-center">
+        <p className="text-lg">charlie-carr.com</p>
       </div>
 
       {/* left header */}
