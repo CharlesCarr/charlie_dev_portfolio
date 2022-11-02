@@ -2,9 +2,18 @@ import Project from "../Project";
 import NFTCollectionImg from "../../images/projects/nft-collection-screen-one.png";
 import StockChartImg from "../../images/projects/StockChartz.png";
 import WorkoutImg from "../../images/projects/WorkoutApp.png";
+import NFLImg from "../../images/projects/nfl-app.png";
 import { useState } from "react";
 
 const allProjects = [
+  {
+    title: "NFL STATS DASHBOARD",
+    image: NFLImg,
+    description: "NFL DASHBOARD DESCRIPTION.",
+    github: "https://github.com/CharlesCarr/nfl_nextgen_stats",
+    demo: "https://react-nfl.onrender.com/",
+    tech: ["Python/Flask", "TypeScript", "React.js", "TailwindCSS"],
+  },
   {
     title: "NFT WEBSITE",
     image: NFTCollectionImg,
@@ -28,15 +37,6 @@ const allProjects = [
     image: StockChartImg,
     description:
       "This project allows users to input stock tickers to display animated, responsive stock price chart data. The user can add up to two stock tickers and compare side by side with a biaxial chart. Users are also able to view percentage change performance. Stock price data is fetched from an external API for current pricing.",
-    github: "https://github.com/CharlesCarr/react-stock-chart",
-    demo: "https://stockchartz.web.app/",
-    tech: ["React JS", "Chakra UI", "Polygon.io API", "Recharts"],
-  },
-  {
-    title: "NFL STATS DASHBOARD",
-    image: StockChartImg,
-    description:
-      "NFL DASHBOARD DESCRIPTION.",
     github: "https://github.com/CharlesCarr/react-stock-chart",
     demo: "https://stockchartz.web.app/",
     tech: ["React JS", "Chakra UI", "Polygon.io API", "Recharts"],
