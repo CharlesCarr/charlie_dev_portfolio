@@ -12,32 +12,38 @@ const Project = ({ title, image, description, github, demo, tech }: any) => {
   };
 
   return (
-    <div className="h-full w-full border border-black flex justify-center items-center p-6">
+    <div className="h-full w-full flex justify-center items-center">
       {/* left side project */}
-      <div className="w-1/3 h-full border flex flex-col justify-between items-center py-6 px-4">
-        <h1 className="font-bold mb-2 text-2xl">{title}</h1>
-        <div className="w-full h-1 border-t border-black mb-2"></div>
+      <div className="w-1/3 h-full border-4 border-black flex flex-col justify-between items-center py-14 px-4 mr-2 bg-[#acafb5]">
+        <h1 className="font-bold mb-2 text-2xl tracking-wide">{title}</h1>
+        <div className="w-full h-1 border-t-black border-b-0 border-x-0 border-4 mb-2"></div>
         <p className="text-sm text-center leading-6 px-3">{description}</p>
-        <div className="w-full h-4 border-t border-black mt-2"></div>
+        <div className="w-full h-4 border-t-black border-b-0 border-x-0 border-4 mt-2"></div>
         <ul className="m-0 p-0 w-full flex justify-center items-center">
           <li>
-            <FaGithub className="w-8 h-8 mr-3 cursor-pointer" onClick={() => gitHubClickHandler()} />
+            <FaGithub
+              className="w-8 h-8 mr-3 cursor-pointer"
+              onClick={() => gitHubClickHandler()}
+            />
           </li>
           <li>
-            <LinkIcon className="w-8 h-8 ml-3 cursor-pointer" onClick={() => demoClickHandler()} />
+            <LinkIcon
+              className="w-8 h-8 ml-3 cursor-pointer"
+              onClick={() => demoClickHandler()}
+            />
           </li>
         </ul>
       </div>
 
       {/* right side project */}
-      <div className="w-2/3 h-full border flex flex-col items-center justify-center p-4">
+      <div className="w-2/3 h-full flex flex-col items-center justify-center">
         {/* change to video soon */}
-        <div className="w-full h-3/4 border border-black flex justify-center items-center">
-          <Image src={image} height={"225"} width={"450"} />
+        <div className="w-full h-3/4 flex justify-center items-center border-t-black border-x-black border-b-0 border-4 relative bg-black">
+          <Image src={image} layout="fill" objectFit="contain" />
         </div>
-        <ul className="w-full h-1/4 border border-black flex justify-around items-center">
+        <ul className="w-full h-1/4 flex justify-around items-center  border-4 border-black shadow-inner">
           {tech.map((t: string) => (
-            <li>{t}</li>
+            <li className="font-bold text-lg tracking-wide">{t}</li>
           ))}
         </ul>
       </div>

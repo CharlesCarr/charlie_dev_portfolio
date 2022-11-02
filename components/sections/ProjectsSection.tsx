@@ -9,16 +9,16 @@ const allProjects = [
   {
     title: "NFL STATS DASHBOARD",
     image: NFLImg,
-    description: "NFL DASHBOARD DESCRIPTION.",
+    description: "NFL stats dashboard (full stack web app) using AWS's Next Gen NFL Stats for displaying and tracking passing data.",
     github: "https://github.com/CharlesCarr/nfl_nextgen_stats",
     demo: "https://react-nfl.onrender.com/",
-    tech: ["Python/Flask", "TypeScript", "React.js", "TailwindCSS"],
+    tech: ["Python/Flask", "TypeScript", "React/Redux", "TailwindCSS"],
   },
   {
     title: "NFT WEBSITE",
     image: NFTCollectionImg,
     description:
-      "This is a professional enterprise landing page to display NFT collections with a clean and modern design. NFT images were created using StarryAI's AI generation. Users are able to view and filter by different collections.",
+      "NFT collection website with a clean and modern design. NFT images were created using StarryAI's AI generation.",
     github: "https://github.com/CharlesCarr/next-nft-landing-page",
     demo: "https://next-nft-landing-page.vercel.app/",
     tech: ["React JS", "TypeScript", "Next.js", "TailwindCSS"],
@@ -27,7 +27,7 @@ const allProjects = [
     title: "MY WORKOUT APP",
     image: WorkoutImg,
     description:
-      "This is a mobile friendly, custom workout tracker web app built with React. After creating a profile, users are able to create, save, and edit workouts to store in the user’s library of workouts. Users can then select a workout for the day to have on hand while at the gym.",
+      "Custom workout tracker web app. Enabling users to create profiles and create, save, and edit workouts. Ability to select workout for the day to have on hand while at the gym.",
     github: "https://github.com/CharlesCarr/workout-v2",
     demo: "https://workout-tracker-faa13.web.app/",
     tech: ["React JS", "Material UI", "Firebase"],
@@ -36,7 +36,7 @@ const allProjects = [
     title: "STOCKCHARTZ",
     image: StockChartImg,
     description:
-      "This project allows users to input stock tickers to display animated, responsive stock price chart data. The user can add up to two stock tickers and compare side by side with a biaxial chart. Users are also able to view percentage change performance. Stock price data is fetched from an external API for current pricing.",
+      "Stock tracking chart web app. Users input stock ticker(s) to display and compare stock price chart data and percentage change.",
     github: "https://github.com/CharlesCarr/react-stock-chart",
     demo: "https://stockchartz.web.app/",
     tech: ["React JS", "Chakra UI", "Polygon.io API", "Recharts"],
@@ -50,29 +50,29 @@ function Projects() {
 
   return (
     <div className="h-full w-full relative">
-      <ul className="absolute flex justify-center items-center -top-10 left-0">
+      <ul className="absolute flex justify-center items-center -top-8 left-0">
         <li
           className={`${
             projectSelected === 0 ? "bg-black" : null
-          } mr-4 border border-black w-3 h-3 rounded-full cursor-pointer`}
+          } mr-4 border-2 border-black w-3 h-3 rounded-full cursor-pointer`}
           onClick={() => setProjectSelected(0)}
         ></li>
         <li
           className={`${
             projectSelected === 1 ? "bg-black" : null
-          } mr-4 border border-black w-3 h-3 rounded-full cursor-pointer`}
+          } mr-4 border-2 border-black w-3 h-3 rounded-full cursor-pointer`}
           onClick={() => setProjectSelected(1)}
         ></li>
         <li
           className={`${
             projectSelected === 2 ? "bg-black" : null
-          } mr-4 border border-black w-3 h-3 rounded-full cursor-pointer`}
+          } mr-4 border-2 border-black w-3 h-3 rounded-full cursor-pointer`}
           onClick={() => setProjectSelected(2)}
         ></li>
         <li
           className={`${
             projectSelected === 3 ? "bg-black" : null
-          } mr-4 border border-black w-3 h-3 rounded-full cursor-pointer`}
+          } mr-4 border-2 border-black w-3 h-3 rounded-full cursor-pointer`}
           onClick={() => setProjectSelected(3)}
         ></li>
       </ul>
@@ -88,7 +88,6 @@ function Projects() {
         />
       )}
       {projectSelected === 1 && (
-        <div className="h-full w-full border border-black">
           <Project
             title={allProjects[1].title}
             image={allProjects[1].image}
@@ -97,10 +96,8 @@ function Projects() {
             demo={allProjects[1].demo}
             tech={allProjects[1].tech}
           />
-        </div>
       )}
       {projectSelected === 2 && (
-        <div className="h-full w-full border border-black">
           <Project
             title={allProjects[2].title}
             image={allProjects[2].image}
@@ -109,10 +106,8 @@ function Projects() {
             demo={allProjects[2].demo}
             tech={allProjects[2].tech}
           />
-        </div>
       )}
       {projectSelected === 3 && (
-        <div className="h-full w-full border border-black">
           <Project
             title={allProjects[3].title}
             image={allProjects[3].image}
@@ -121,7 +116,6 @@ function Projects() {
             demo={allProjects[3].demo}
             tech={allProjects[3].tech}
           />
-        </div>
       )}
     </div>
   );
