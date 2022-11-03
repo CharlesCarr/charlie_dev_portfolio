@@ -46,7 +46,6 @@ const allProjects = [
 function Projects() {
   // will be based off of the project index (need to add that to the data)
   const [projectSelected, setProjectSelected] = useState<number>(0);
-  console.log(projectSelected);
 
   return (
     <div className="h-full w-full relative">

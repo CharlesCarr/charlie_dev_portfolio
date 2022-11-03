@@ -6,7 +6,7 @@ import LeftSection from "../components/sections/LeftSection";
 
 const Home: NextPage = () => {
   return (
-    <div className="h-screen max-h-screen w-screen max-w-screen flex flex-col justify-center items-center bg-[#ced1d3]">
+    <div className="h-full lg:h-screen lg:max-h-screen w-screen max-w-screen flex flex-col justify-center items-center bg-[#ced1d3]">
       <Head>
         <title>Charlie Carr</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <Header />
       {/* main content */}
-      <div className="w-full h-header flex justify-center items-center">
+      <div className="w-full h-full lg:h-header flex flex-col lg:flex-row justify-center items-center">
         {/* LEFT SECTION */}
         <LeftSection />
         {/* RIGHT SECTION */}
