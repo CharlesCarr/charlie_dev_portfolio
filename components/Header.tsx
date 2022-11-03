@@ -1,14 +1,8 @@
-// import { useState } from "react";
-// import {
-//   MoonIcon,
-//   SunIcon,
-//   Bars3CenterLeftIcon,
-// } from "@heroicons/react/24/solid";
-// import HamburgerMenu from "./HamburgerMenu";
+import { useState } from "react";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 function Header() {
-  // const [lightMode, setLightMode] = useState<boolean>(false);
-  // const [showHamMenu, setShowHamMenu] = useState<boolean>(false);
+  const [lightMode, setLightMode] = useState<boolean>(true);
 
   return (
     <header className="flex h-16 w-full justify-between items-center px-12  border-b-black border-t-0 border-x-0 border-4 bg-[#e1e2e6]">
@@ -19,8 +13,20 @@ function Header() {
 
       {/* left header */}
       <div className="flex items-center justify-center">
-        <p className="text-xs">Dark</p>
-        <button className="border-2 ml-5 border-black py-1 px-3 text-base sm:text-lg">
+        <div className="text-xs">
+          {lightMode ? (
+            <MoonIcon
+              className="w-6 h-6 cursor-pointer"
+              onClick={() => setLightMode(!lightMode)}
+            />
+          ) : (
+            <SunIcon
+              className="w-6 h-6 cursor-pointer"
+              onClick={() => setLightMode(!lightMode)}
+            />
+          )}
+        </div>
+        <button className="border-2 ml-7 border-black py-1 px-3 text-base sm:text-lg">
           Resume
         </button>
       </div>
